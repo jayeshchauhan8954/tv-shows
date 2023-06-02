@@ -1,0 +1,134 @@
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: transparent;
+    border: 1px solid #c4c4e0;
+    border-radius: 50px;
+    padding: 2%;
+    margin: 2%;
+    margin-left: 20px;
+    backdrop-filter: blur(15px);
+}
+
+.container h1
+{
+    font-size: 48px;
+    color: #7c7c95;
+    font-weight: 800;
+}
+.container h1:hover
+{
+    color:#c4c4e0 ;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.container .container-data
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container .container-card
+{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin: 2% ;
+    padding: 1% 0;
+    width: 40%;
+    flex-direction: column;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 50px;
+}
+
+#summary-btn
+{
+    background: transparent;
+    border: 1px solid #7c7c95;
+    border-radius: 50px;
+    box-shadow: -8px 8px 20px 0.1px #f4f4fe;
+    font-size: 14px;
+    margin: 1%;
+    width: 90%;
+    width: auto;
+
+}
+#summary-btn:hover
+{
+    font-size: 22px;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+
+/* media query */
+@media (max-width: 650px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: transparent;
+        border: 1px solid #c4c4e0;
+        border-radius: 50px;
+        padding: 2%;
+        margin: 2%;
+        margin-left: 20px;
+        backdrop-filter: blur(15px);
+    }
+
+    .container h1 {
+        font-size: 36px;
+        color: #7c7c95;
+        font-weight: 800;
+    }
+
+    .container h1:hover {
+        color: #c4c4e0;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .container .container-data {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .container .container-card {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 2%;
+        padding: 1% 0;
+        width:inherit;
+        flex-direction: column;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 50px;
+    }
+
+    #summary-btn {
+        background: transparent;
+        border: 1px solid #7c7c95;
+        border-radius: 50px;
+        box-shadow: -8px 8px 20px 0.1px #f4f4fe;
+        font-size: 14px;
+        margin: 1%;
+        width: 90%;
+        width: auto;
+    }
+
+    #summary-btn:hover {
+        font-size: 22px;
+        cursor: pointer;
+        width: inherit;
+    }
+}

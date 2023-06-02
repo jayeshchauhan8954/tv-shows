@@ -1,0 +1,52 @@
+#navbar 
+{
+    height: 4rem;
+    font-size: 3em;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    margin:2% 0;
+    backdrop-filter: blur(15px);
+    background: transparent;
+    border-radius: 50px;
+    padding:  22px;
+    top: 0;
+    left: 0;
+    position:sticky;
+    z-index: 1;
+}
+
+#nav-text 
+{
+    color: #7c7c95;
+    letter-spacing: 15px;
+    margin: 5%;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+#nav-text:hover
+{
+    color: #f4f4fe;
+    letter-spacing: 20px;
+    font-size: xx-large;
+}
+
+
+
+/* media querry */
+@media (max-width: 650px) {
+    #navbar {
+        font-size: 2em;
+    }
+
+    #nav-text {
+        font-size: 1.5em;
+        letter-spacing: 10px;
+    }
+
+    #nav-text:hover {
+        letter-spacing: 15px;
+        font-size: x-large;
+    }
+}
