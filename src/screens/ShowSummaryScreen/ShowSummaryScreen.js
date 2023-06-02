@@ -42,7 +42,7 @@ const ShowSummaryScreen = () => {
 				<h2>Book Ticket</h2>
 				<div className="book-form">
 					<div>
-						<img src={showImage} />
+						<img src={showImage} alt={showName} />
 					</div>
 					<form onSubmit={handleFormSubmit} className="form">
 						<label>
