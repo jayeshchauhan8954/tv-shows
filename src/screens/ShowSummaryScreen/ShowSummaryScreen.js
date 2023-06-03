@@ -39,7 +39,7 @@ const ShowSummaryScreen = () => {
 	if (bookingFormVisible) {
 		return (
 			<div className="book-form-container">
-				<h2>Book Ticket</h2>
+				<h2>Book Your Show Ticket</h2>
 				<div className="book-form">
 					<div>
 						<img src={showImage} alt={showName} />

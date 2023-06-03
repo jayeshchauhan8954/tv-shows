@@ -43,7 +43,7 @@
     padding: 1% 0;
     width: 40%;
     flex-direction: column;
-    border: 2px solid rgba(255,255,255,0.5);
+    /* border: 2px solid rgba(255,255,255,0.5); */
     border-radius: 50px;
 }
 
@@ -53,17 +53,18 @@
     border: 1px solid #7c7c95;
     border-radius: 50px;
     box-shadow: -8px 8px 20px 0.1px #f4f4fe;
-    font-size: 14px;
+    font-size: 18px;
     margin: 1%;
+    margin-top: 5%;
     width: 90%;
-    width: auto;
+    height: auto;
+    padding: 0 40px;
 
 }
 #summary-btn:hover
 {
-    font-size: 22px;
     cursor: pointer;
-    width: 100%;
+    width: 92%;
 }
 
 

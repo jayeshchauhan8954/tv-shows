@@ -3,7 +3,7 @@
     margin: 0 3%;
     padding: .5%;
     width: 100%;
-    border: 2px solid;
+    border: 2px solid #c4c4e0;
     display: flex;
     justify-content: center;
     background:transparent;
@@ -52,6 +52,7 @@ color: #81819f;
         border-radius: 50px;
         box-shadow: -5px -5px 40px 0.3px #c4c4e0;
     }
+ 
 
     .card-title {
         font-size: 28px;
