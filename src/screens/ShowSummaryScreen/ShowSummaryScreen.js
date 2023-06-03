@@ -71,15 +71,21 @@ const ShowSummaryScreen = () => {
 		);
 	} else {
 		return (
-			<div className="summary-container">
-				<h1>Summary of {showName && <span>{showName}</span>}</h1>
-				<div id="summaryBox">
-					<div>{showImage && <img src={showImage} alt={showName} />}</div>
-					<div>
-						{showSummary ? <div dangerouslySetInnerHTML={{ __html: showSummary }} /> : <p>Loading...</p>}
+			<div className="show-summary-screen">
+				<div className="summary-container">
+					<h1>Summary of {showName && <span>{showName}</span>}</h1>
+					<div id="summaryBox">
+						<div>{showImage && <img src={showImage} alt={showName} />}</div>
+						<div className="summary-box">
+							{showSummary ? (
+								<div dangerouslySetInnerHTML={{ __html: showSummary }} />
+							) : (
+								<p>Loading...</p>
+							)}
+						</div>
 					</div>
+					<button onClick={handleBookTicket}>{ticketBooked ? 'Ticket Booked' : 'Book Your Ticket'}</button>
 				</div>
-				<button onClick={handleBookTicket}>{ticketBooked ? 'Ticket Booked' : 'Book Your Ticket'}</button>
 			</div>
 		);
 	}

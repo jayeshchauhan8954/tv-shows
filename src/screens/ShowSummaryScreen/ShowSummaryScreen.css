@@ -1,59 +1,71 @@
 .summary-container
 {
     height: 80vh;
-    width: 80vw;
-    display: flex;
-    margin-top: 140px;
-    margin-bottom: 10rem;
-    justify-content: center;
+    width: 80%;
     align-items: center;
-    flex-direction: column;
+    padding: 30px;
+    margin: 30px;
+    margin-left: 100px;
+    position: relative;
+}
+
+.summary-container h1{
     color: #fff;
-
+    border: 2px solid #fff;
+    padding: 5px 16px;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
 }
 
-.summary-container h1
+#summaryBox
 {
-    border: none;
+display: flex;
+justify-content:space-evenly;
+align-items: center;
+color: #fff;
+position: relative;
+}
+#summaryBox  >  div
+{
+    top: 5px;
+    height: 100%;
+    width: 150%;
+}
+#summaryBox > div img
+{
+    border: 0.5px solid #fff;
     border-radius: 50px;
-    padding: 0 20px;
-    margin: 20px;
-    width: 40%;
-    background: transparent;
+    width: 80%;
+    box-shadow: 3px 3px 10px 0.3px  #fff;
+}
+.summary-box 
+{
+    position: relative;
+    margin-top: 15px;
+    font-size: 14px;
+    width: fit-content;
+    height: inherit;
+    padding: 20px;
+    border-radius: 50px;
     backdrop-filter: blur(15px);
-    
-}
-
-#summaryBox 
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    
-}
-#summaryBox img {
-    border-radius: 50px;
-    width: 280px;
-    margin-bottom: 10%;
 }
 .summary-container button
 {
-margin: 20px;    
-padding: 10px 20px;
-font-size: 22px;
-border-radius: 50px;
-background: transparent;
-backdrop-filter: blur(15px);
-color: #fff;
+    margin-top: 30px;
+    margin-left: 150px;
+    padding: 5px 15px;
+    border: 1px solid #fff;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    color: #fff;
+    margin-left: 260px;
+    margin-bottom: 40px;
+    border-radius: 50px;
 }
 
 
-
-/* css for Booking form */
-
-.book-form-container
-{
+/* css for book form */
+.book-form-container {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -61,8 +73,8 @@ color: #fff;
     color: #fff;
 
 }
-.book-form-container h2
-{
+
+.book-form-container h2 {
     font-size: 34px;
     border: 2px solid #fff;
     border-radius: 50px;
@@ -71,43 +83,42 @@ color: #fff;
     box-shadow: -8px -8px 15px 0.3px #fff;
 
 }
-.book-form div
-{
+
+.book-form div {
     margin: 20px;
     padding: 20px;
     border: 2px solid #fff;
     border-radius: 50px;
     height: 50%;
 }
-.book-form div img{
+
+.book-form div img {
     border-radius: 50px;
     width: 280px;
 }
 
-.book-form
-{
+.book-form {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.form
-{
+.form {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.form label
-{
+
+.form label {
     margin: 10px;
     padding: 10px;
     border: 2px solid;
     border-radius: 50px;
 }
-.form label input
-{
+
+.form label input {
     border: none;
     padding: 5px;
     padding-left: 16px;
@@ -116,110 +127,69 @@ color: #fff;
     background: transparent;
     color: #fff;
     box-shadow: 3px 3px 5px 0.3px #fff;
-        backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
 }
 
 
-.form-btn 
-{
+.form-btn {
     display: flex;
     justify-content: space-around;
 
     align-items: center;
 }
 
-.form-btn button
-{
+.form-btn button {
     padding: 10px 20px;
     margin: 10px 20px;
     border-radius: 50px;
     background: transparent;
     color: #fff;
     backdrop-filter: blur(15px);
-    
-}
+
+} 
 
 
-/* media querry  */
-@media (max-width: 550px) {
-    .summary-container {
-        margin-top: 80px;
-        margin-bottom: 5rem;
+@media (max-width:600px) {
+
+    .show-summary-screen
+    {
+        padding-bottom: 200px;;
     }
-
-    .summary-container h1 {
-        width: 85%;
-        margin-top: 180px;
-        margin-left: 140px;
-        border: 1px solid white;
+    .summary-container{
+    margin-bottom: 50px;
+    padding-bottom: 100px;
     }
-
     #summaryBox {
-        margin-left: 100px;
-        border: 2px solid white;
-        border-radius: 50px;
-        padding-left: 20px;
-        padding-top: 20px;
-        color: #fff;
-        backdrop-filter: blur(15px);
-        
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+            color: #fff;
+            position: relative;
+        }
+        #summaryBox>div {
+            top: 5px;
+            width: 90%;
+        }
 
-    }
-    #summaryBox img {
-        width: 100%;
-        margin-bottom: 5%;
-        box-shadow: 2px 2px 10px 0.3px #fff;
-    }
-   
-         .summary-container  {
-             margin-top: 200px;
-             margin-bottom: 200px;
-             padding-bottom: 200px;
-         }
+        .summary-box {
+            position: relative;
+            font-size: 16px;
+            width:inherit;
+            border-radius: 50px;
+            backdrop-filter: blur(15px);
+        }
 
-    .summary-container button {
-        font-size: 18px;
-        margin-left: 140px;
-        padding-bottom: 20px;
-    } 
-
-    .book-form-container {
-        margin-top: 80px;
+        .summary-container button {
+            margin-top: 30px;
+            margin-left: 150px;
+            padding: 5px 15px;
+            border: 1px solid #fff;
+            background: transparent;
+            backdrop-filter: blur(15px);
+            color: #fff;
+            margin-left: 150px;
+            margin-bottom: 40px;
+            border-radius: 50px;
+        }
     }
-
-    .book-form-container h2 {
-        font-size: 24px;
-        display: flex;
-        padding: 15px 3px;
-        margin:0 85px;
-        align-items: center;
-        justify-content: center;
-        backdrop-filter: blur(15px);
-    }
-
-    .book-form div {
-        margin: 10px;
-        padding: 10px;
-    }
-
-    .book-form div img {
-        width: 100%;
-    }
-
-    .form label {
-        margin: 5px;
-        padding: 5px;
-        font-size: 14px;
-    }
-
-    .form label input {
-        margin-left: 10px;
-    }
-
-    .form-btn button {
-        font-size: 14px;
-        margin-top: 20px;
-        backdrop-filter: blur(15px);
-        
-    }
-}
